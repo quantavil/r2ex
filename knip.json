@@ -1,0 +1,54 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "ignore": [
+    "template/**"
+  ],
+  "workspaces": {
+    ".": {
+      "ignoreDependencies": [
+        "wrangler"
+      ]
+    },
+    "packages/dashboard": {
+      "entry": [
+        "src/routes/**/+*.{js,ts,svelte}",
+        "src/lib/**/index.ts",
+        "src/lib/components/ui/*.svelte",
+        "e2e/**/*.spec.ts",
+        "tests/**/*.ts"
+      ],
+      "project": [
+        "src/**/*.{ts,svelte}",
+        "tests/**/*.ts",
+        "e2e/**/*.ts"
+      ],
+      "ignoreDependencies": [
+        "tailwindcss"
+      ]
+    },
+    "packages/worker": {
+      "entry": [
+        "src/index.ts",
+        "tests/**/*.ts"
+      ],
+      "project": [
+        "src/**/*.ts",
+        "tests/**/*.ts"
+      ],
+      "ignoreDependencies": [
+        "cloudflare",
+        "wrangler"
+      ]
+    },
+    "packages/docs": {
+      "ignoreDependencies": [
+        "wrangler"
+      ]
+    },
+    "packages/worker/dev": {
+      "entry": [
+        "e2e.ts"
+      ]
+    }
+  }
+}

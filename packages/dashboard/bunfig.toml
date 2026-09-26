@@ -1,0 +1,2 @@
+[test]
+testMatch = ["tests/unit/**/*.test.ts"]

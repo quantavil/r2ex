@@ -1,0 +1,14 @@
+{
+  "$schema": "https://github.com/changesets/changesets/blob/main/packages/config/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "quantavil/r2ex" }
+  ],
+  "commit": false,
+  "fixed": [],
+  "linked": [],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": ["r2ex-dashboard", "r2ex-github-action", "r2ex-docs", "r2ex-dev-worker"]
+}

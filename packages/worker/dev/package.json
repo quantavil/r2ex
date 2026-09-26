@@ -1,0 +1,10 @@
+{
+	"name": "r2ex-dev-worker",
+	"private": true,
+	"devDependencies": {
+		"wrangler": "^4.127.1"
+	},
+	"scripts": {
+		"deploy": "wrangler deploy"
+	}
+}
