@@ -9,9 +9,6 @@ html_handling = "auto-trailing-slash"
 not_found_handling = "single-page-application"
 run_worker_first = ["/api/*", "/share/*"]
 
-# To bind your R2 bucket via wrangler.toml, uncomment and replace with your actual bucket name.
-# Or bind it in the Cloudflare Dashboard under Settings -> Bindings -> R2 Bucket:
-# [[r2_buckets]]
-# binding = "BUCKET"
-# bucket_name = "your-actual-bucket-name"
-
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "r2ex-storage"
